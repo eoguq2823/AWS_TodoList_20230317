@@ -1,0 +1,97 @@
+.menu-aside {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+     z-index: 99; /* 항상 젤 위로 올라올 수 있게 */
+    
+    width: 300px;
+    height: 100%;
+    box-shadow: 1px 0px 5px 1px black; /*입체감*/
+    background-color: #454545;
+    transition: left 1s ease; /*어디(left) 몇초동안(1s) 속도(ease) 챕터11장보면 나와있음 */ 
+}
+
+/* .menu-aside:hover {
+    left: -310px;
+} */
+
+.hidden-menu { /* 클릭 일어나면 얘가 일어남 */
+    left: -300px;
+}
+
+.aside-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #dbdbdb;
+    padding: 20px 5px 20px 10px;
+    background-color: #121212;  
+}
+
+.header-title, .aside-header i[class *= "fa"] {
+    color: white;
+}
+
+.menu-button {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -13px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0;
+    width: 13px;
+    height: 60px;
+    
+    background-color: #454545;
+    color: #ffc472;
+}
+
+.menu-button:hover, .menu-button:active {
+    background-color: #454545;
+    text-shadow: 0px 0px 5px #ffc472;
+}
+
+.fa-calendar-check {
+    padding: 0px 15px;
+}
+
+.header-title {
+    font-size: 18px;
+    cursor: default; /* h1텍스트이기때문에 I표시가뜨는데 마우스모양뜨게 변경 */
+}
+
+.menu-nav {
+    padding-top: 20px;
+}
+
+.menu-items li{
+    display: flex;
+    align-items: center;
+        
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0px 20px;
+    height: 40px;
+    background-color: #303030;
+
+    font-size: 16px;
+    color: white;
+}
+
+.menu-items li:hover {
+    background-color: #121212;
+}
+
+.menu-items li .fa-regular {
+    padding: 0px 10px;
+    font-size: 16px;
+    color: white;
+
+}
